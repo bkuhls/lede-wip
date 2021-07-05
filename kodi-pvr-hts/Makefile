@@ -38,6 +38,6 @@ define Package/kodi-pvr-hts/install
 	$(INSTALL_DIR) $(1)/usr/lib $(1)/usr/share
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/kodi $(1)/usr/lib
 	$(CP) $(PKG_INSTALL_DIR)/usr/share/kodi $(1)/usr/share
-endef
+endif
 
 $(eval $(call BuildPackage,kodi-pvr-hts))
